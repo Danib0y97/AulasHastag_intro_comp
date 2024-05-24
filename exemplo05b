@@ -1,0 +1,34 @@
+# Definição das listas de salários
+sal = [7000, 15, 10000, 5, 7]
+sal_nova = []
+# Função para reajustar os salários em 10%
+def reajuste(sal):
+    
+    for sals in sal:
+        sals += sals * 0.1
+        sal_nova.append(sals)
+    return sal_nova
+
+# Função para calcular o total dos salários em uma lista
+def total(sal):
+    custo = 0 
+    for sals in sal:
+        custo += sals
+    return custo
+
+# Função para calcular a diferença entre os totais de duas listas de salários
+def dif(sal, sal_nova):
+    return total(sal_nova) - total(sal)
+
+# Ajusta os salários e calcula a diferença
+sal_nova = reajuste(sal)
+total_original = total(sal)
+total_adjusted = total(sal_nova)
+difference = dif(sal, sal_nova)
+
+# Imprime os resultados
+print(f"Salários originais: {sal}")
+print(f"Salários ajustados: {sal_nova}")
+print(f"Custo total original: {total_original}")
+print(f"Custo total ajustado: {total_adjusted}")
+print(f"Diferença de custo: {difference}")

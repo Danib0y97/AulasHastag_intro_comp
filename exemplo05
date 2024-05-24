@@ -1,0 +1,23 @@
+sal = [7000, 15, 10000, 5, 7]
+sal_nova = []
+
+def reajuste(sal):
+    for sals in sal:
+      sals += sals * 0.1
+      sal_nova.append(sals)
+    print(sal_nova) 
+
+def total(sal):
+    custo = sum(sal)
+    print(custo)
+
+def dif (sal, sal_nova):
+   
+   dif_sal = sum(sal_nova) - sum(sal)
+   print(dif_sal) 
+
+
+reajuste(sal)
+total(sal)
+total(sal_nova)
+dif(sal, sal_nova)

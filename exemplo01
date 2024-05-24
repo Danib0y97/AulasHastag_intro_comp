@@ -1,0 +1,11 @@
+sal = 2000
+
+ano = 1
+
+while ano < 11:
+
+ sal += sal * 0.10
+
+ ano += 1 
+
+print(sal) 

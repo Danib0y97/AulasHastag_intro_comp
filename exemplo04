@@ -1,0 +1,13 @@
+lista = [7000, 15, 10000, 5, 7]
+lista_nova = []
+
+for produto in lista:
+    if produto > 5000:
+        produto += produto * 0.05
+      
+    else:
+         produto += produto * 0.01
+         
+    lista_nova.append(produto)
+
+print(lista_nova)

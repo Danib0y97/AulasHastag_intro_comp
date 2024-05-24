@@ -1,0 +1,9 @@
+lista = [10, 15, 30, 5, 7]
+lista_nova = []
+
+for produto in lista:
+    
+    produto += produto * 0.05
+    lista_nova.append(produto)
+
+print(lista_nova)
